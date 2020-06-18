@@ -15,6 +15,7 @@ function App() {
     <Router>
       <div className="page">
         <TopMenu/>
+        {/* <Header/> */}
         <Header/>
         <Url_router/>
         {/* <Content src="https://i.pcmag.com/imagery/reviews/069PhzykC3xUAFsH0VKc8rG-13.fit_lpad.size_624x364.v_1569471925.jpg"/>   */}
