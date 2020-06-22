@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
-
+import Header from './../Header/Header.js';
 export default class News extends Component {
     render() {
         return (
             <article>
+                <Header title="Super news"/>
                 <div className="container">
                 <div className="row">
                     <div className="col-lg-8 col-md-10 mx-auto">

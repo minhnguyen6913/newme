@@ -1,26 +1,34 @@
 import React, { Component } from 'react';
-
+import Item from './Item.js';
+import data from './content.json'; 
+import Header from './../Header/Header.js';
 class Content extends Component {
-    
-    
     render() {
+        
         return (
-            <header className="masthead" style={{backgroundImage: 'url("https://www.thesun.co.uk/wp-content/uploads/2017/09/gettyimages-103741992.jpg?w=620")'}}>
-                <div className="overlay" />
+            <div>
+                 <Header title="Danh sách mục tiêu" subTitle="2020"/>
                 <div className="container">
-                <div className="row">
-                    <div className="col-lg-8 col-md-10 mx-auto">
-                    <div className="post-heading" >
-                        <h1>Man must explore, and this is exploration at its greatest</h1>
-                        <h2 className="subheading">Problems look mighty small from 150 miles up</h2>
-                        <span className="meta">Posted by
-                        <a href="/">Start Bootstrap</a>
-                        on August 24, 2019</span>
-                    </div>
+                    <div className="row mt-3">
+                        {
+                            data.map((value, key) => {
+                                    return (
+                                        <Item 
+                                        key = {value.key}
+                                        id={value.id} 
+                                        img_url={value.img_url} 
+                                        title={value.title} 
+                                        description={value.description}
+                                        
+                                        />
+                                    )
+                                } 
+                            )
+                        }
                     </div>
                 </div>
-                </div>
-            </header>
+            </div>
+            
         );
     }
 }
