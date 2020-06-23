@@ -1,6 +1,9 @@
 import React, { Component } from 'react'
 import Header from './../Header/Header.js';
 import nhansu from './nhansu.json'; 
+import axios from 'axios';
+
+ 
 export default class News extends Component {
     constructor (props) {
         super(props);
@@ -9,20 +12,20 @@ export default class News extends Component {
             isLoaded: false,
             postId : null
         }
-    }
-    componentDidMount() {
         
-        fetch('http://api.local/tochuc/nhansu/getallns/', {
-            method: 'POST',
-            headers : new Headers(),
-        }).then((res) => res.json())
-        .then((data) =>  console.log(data))
-        .catch((err)=>console.log(err))
     }
+    componentWillMount() {
+        this.getDataAxios();
+        }
     
+        async getDataAxios(){
+            const response =
+                await axios.post("http://api.local/tochuc/nhansu/getallns/")
+            console.log(response.data)
+        }
     render() {
-        const {postId} = this.state;
-        console.log(postId);
+        
+
         return (
             <div>
                 <Header title="Super news"/>
