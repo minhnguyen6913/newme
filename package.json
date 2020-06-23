@@ -12,18 +12,11 @@
     "react-scripts": "3.4.1"
   },
   "scripts": {
-    "build": "npm run build:css && npm run build:js",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "start": "set PORT=8080 && react-scripts start",
-    "stop": "taskkill -F -IM node.exe",
-    "lint": "jshint **",
-    "build:css": "stylus assets/styles/main.styl > dist/main.css",
-    "build:js": "browserify assets/scripts/main.js > dist/main.js",
-    "prebuild:js": "npm run lint",
-    "prepublish": "npm run build # also runs npm run prebuild",
-    "prebuild": "npm run test # also runs npm run pretest",
-    "pretest": "npm run lint"
+    "stop": "taskkill -F -IM node.exe"
   },
   "eslintConfig": {
     "extends": "react-app"

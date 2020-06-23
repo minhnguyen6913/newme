@@ -1,11 +1,11 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import Header from './../Header/Header.js';
 import data from './content.json'; 
 export default class Detail extends Component {
     render() {
         return (
             <div>
-                {
+                {/* {
                     data.map((value,key) => {
                         if (value.id === this.props.match.params.id)  {
                             return (
@@ -22,7 +22,7 @@ export default class Detail extends Component {
                             )
                         }
                     })
-                }
+                } */}
             </div>
             
         )

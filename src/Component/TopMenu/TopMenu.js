@@ -20,7 +20,7 @@ class TopMenu extends Component {
                                 </li>
                                 
                                 <li className="nav-item">
-                                    <NavLink className="nav-link" to="/news">News</NavLink>
+                                    <NavLink className="nav-link" to="/news">Danh sách nhân sự</NavLink>
                                 </li>
                                 <li className="nav-item">
                                     <NavLink className="nav-link" to="/contact">Contact</NavLink>

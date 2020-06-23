@@ -1,13 +1,14 @@
 import React, { Component } from 'react'
-import Content from './../Component/Content/Content.js';
-import Contact from './../Component/Content/Contact.js';
-import Detail from './../Component/Content/Detail.js';
-import News from './../Component/Content/News.js';
+import Content from '../Component/Content/Content.js';
+import Contact from '../Component/Content/Contact.js';
+import Detail from '../Component/Content/Detail.js';
+import News from '../Component/Content/News.js';
 
 import {
     Route
 } from "react-router-dom";
-export default class Url_router extends Component {
+
+export default class UrlRouter extends Component {
     render() {
         return (
             <div>
