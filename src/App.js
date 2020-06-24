@@ -1,9 +1,9 @@
 import React from 'react';
 import './App.css';
-import TopMenu from './Component/TopMenu/TopMenu.js';
+import TopMenu from './component/core/topMenu.js';
 
-import Footer from './Component/Footer/Footer.js';
-import UrlRouter from './router/UrlRouter.js';
+import Footer from './component/core/footer.js';
+import UrlRouter from './router/urlrouter.js';
 import {
   BrowserRouter as Router,
 } from "react-router-dom";
