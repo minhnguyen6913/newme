@@ -8,11 +8,14 @@
     "@testing-library/user-event": "^7.1.2",
     "axios": "^0.19.2",
     "cors": "^2.8.5",
-    "jquery": "^3.5.1",
+    "datatables.net-bs4": "^1.10.21",
+    "datatables.net-dt": "^1.10.21",
     "react": "^16.13.1",
+    "react-data-table-component": "^6.9.3",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.1"
+    "react-scripts": "3.4.1",
+    "styled-components": "^5.1.1"
   },
   "scripts": {
     "build": "react-scripts build",
@@ -26,6 +29,8 @@
   },
   "devDependencies": {
     "browserify": "latest",
+    "datatables.net": "^1.10.21",
+    "jquery": "^3.5.1",
     "jshint": "latest",
     "stylus": "latest",
     "typescript": "^3.9.5"

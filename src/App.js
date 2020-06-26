@@ -7,19 +7,29 @@ import UrlRouter from './router/urlrouter.js';
 import {
   BrowserRouter as Router,
 } from "react-router-dom";
-function App() {
-  return (
-    <div>
+
+
+class App extends React.Component {
+  
+  render() {
+    return (
+      <div>
+        <div>
       <Router>
         <div className="page">
+          
           <TopMenu/>
           <UrlRouter/>
           <Footer/>
+          
         </div>
       </Router>
     </div>
-    
-  );
+      </div>
+    );
+  }
 }
+
+
 
 export default App;
